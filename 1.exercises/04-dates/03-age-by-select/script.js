@@ -12,30 +12,6 @@
 (() => {
     // your code here
 
-    // document.getElementById("run").addEventListener("click",() => {
-
-    // let a = document.getElementById("dob-day").value
-    // let b = document.getElementById("dob-month").value
-    // let c = document.getElementById("dob-year").value
-
-    // let d = new Date ()
-    // let e = d.getMonth ()
-    // let f = d.getUTCFullYear ()
-
-    // console.log(a)
-    // console.log(b)
-    // console.log(c)
-    // console.log(d)
-    // console.log(e)
-    // console.log(f)
-
-    // function age(){
-    //     let g = f - c
-    // }
-
-    // alert("Vous avez " + g + "ans")
-
-    // })
     document.getElementById("run").addEventListener("click",() => {
 
         var a = document.getElementById('dob-year').value

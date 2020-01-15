@@ -11,20 +11,16 @@
 
 (() => {
     // your code here
-    document.getElementById("run").addEventListener("click", () => {
-        let year = document.getElementById("year").value
-        
-        function numberOfFridaythe13thsIn(jahr) {
-        let count = 0;
-            for (let month = 0; month < 12; month++) {
-        let d = new Date(jahr, month, 13);
-            if (d.getDay() == 5) {
-                count++;
-            }
-                }
-            return count;
+    document.getElementById("run").addEventListener("click",()=> {
+        let Year= document.getElementById("year").value; //input
+        let option = {weekday: "long", year:"numeric",month:"long",day:"numeric"};//organisation date output
+        let optionDay ={weekday:"long"}//affiche le jour
+    for(month=0;month<=11;month++){
+        let friday =new Date(Year,month,13).toLocaleString("fr-BE",option);
+        let fridayCompare =new Date(Year,month,13).toLocaleString("fr-BE",optionDay);//recupere le jour
+        if(fridayCompare=='vendredi'){//compare les jour a vendredi
+            alert ("voici les vendredi 13 de l'année"+" "+Year+" "+"sont : le "+friday)
         }
-        
-        alert(numberOfFridaythe13thsIn(year));
-        })
+    }
+    })
 })();
