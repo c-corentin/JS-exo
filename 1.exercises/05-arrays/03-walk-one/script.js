@@ -25,5 +25,13 @@
         "cerise",
     ];
 
+    document.getElementById("run").addEventListener("click",()=> {
     // your code here
+
+    let fLen = fruits.length
+    
+    for (i = 0; i < fLen; i++) {
+        console.log( fruits[i] + "\n")
+    }
+    })
 })();

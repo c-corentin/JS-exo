@@ -88,5 +88,12 @@
         },
     ];
 
-    // your code here
+    var start = []
+    var sum = ( accumulator, currentValue) => accumulator + currentValue
+    document.getElementById("run").addEventListener("click",()=>{
+        people.forEach(element => {
+            start.push(element["age"]);
+        });
+        console.log(start.reduce(sum))
+    });
 })();

@@ -89,4 +89,10 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let obj = people.find(data => data.lastname === 'Dupont' && data.firstname === "Jean");
+        let index = people.findIndex(data => data.lastname === 'Dupont' && data.firstname === "Jean")
+
+    console.log(obj.email + " index: " + index);
+    })
 })();

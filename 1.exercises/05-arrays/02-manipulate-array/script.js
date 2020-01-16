@@ -23,5 +23,18 @@
         "cerise",
     ];
 
+
+    let last = fruits[fruits.lenght -1]
+
+    document.getElementById("run").addEventListener("click",()=> {
+
+        //Shift del first pop del last
+        //unshift add first push add last
+
+        fruits [0] = "banane"
+        fruits.pop()
+        fruits.push("kiwi")
+    console.log(fruits)
     // your code here
+    })
 })();
