@@ -25,7 +25,13 @@
         "cerise",
         "raisin",
         "cerise",
-    ];
+    ],
+    res = fruits.concat(fruits)
 
-    // your code here
+    document.getElementById("run").addEventListener("click",()=> {
+
+console.log([...new Set(fruits)]) 
+
+    })
+
 })();
