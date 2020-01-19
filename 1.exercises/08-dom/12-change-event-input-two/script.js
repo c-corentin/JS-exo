@@ -10,5 +10,22 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+    document.getElementById("pass-one").addEventListener("input", () => {
+
+    let mdp = document.getElementById("pass-one").value
+    let number = mdp.match(/[0-9]/g)
+    let valid = document.getElementById("validity")
+
+    console.log(mdp)
+
+    if(number.length >1 && mdp.length >= 8) {
+
+        valid.innerHTML = "OK"  
+    }
+
+    else {
+        valid.innerHTML = "Error"  
+    }
+
+})
+})()

@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (() => {
-    const keys = ["name", "species", "age", "gender", "color"];
-    const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+    const keys = ["name", "species", "age", "gender", "color"]
+    const values = ["Skitty", "cat", 9, "female", "tabby"]
+   
+    document.getElementById("run").addEventListener("click",() =>{
+
+    let obj = Object.fromEntries(keys.map((_, i) => [keys[i], values[i]])) // link indexes together
+    console.log(obj) 
+    })
+
 })();

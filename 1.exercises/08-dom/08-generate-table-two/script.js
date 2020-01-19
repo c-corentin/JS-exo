@@ -10,5 +10,24 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+    let a =  document.getElementById("target")
+    
+    let creatingTable = document.createElement("table")
+    a.appendChild(creatingTable)
+    let table = document.querySelector("table")
+    
+    for (let i=0; i<10; i++) {
+
+        let tableRow = document.createElement("tr")
+        let ligne = table.appendChild(tableRow)
+        
+        for (let l=0; l<10; l++) {
+
+            let tableCol = document.createElement("td")
+            ligne.appendChild(tableCol)
+            let Multitable = (i+1)*(l+1)
+            tableCol.innerHTML = Multitable
+        }
+        table.appendChild(tableRow)
+    }
+})()

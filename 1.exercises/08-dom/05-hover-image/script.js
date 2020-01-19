@@ -10,5 +10,13 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+    let a = document.querySelector("img").getAttribute("data-hover")
+
+    document.querySelector('img').addEventListener("mouseover", () => {
+
+        document.querySelector('img').setAttribute("src", a)
+
+        // document.querySelector('img').setAttribute("src", a) -> changement d'attribut
+        // demander comment revenir en arrière
+    })
+})()

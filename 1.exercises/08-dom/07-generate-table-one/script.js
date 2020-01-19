@@ -10,5 +10,15 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let Table = document.createElement('table');
+
+    document.getElementById("target").appendChild(Table);
+
+    for(i =0; i<10; i++)
+    {
+        let TableRow = document.createElement('tr');
+        document.querySelector("table").appendChild(TableRow);
+    }
+
+    console.log(Table)
 })();

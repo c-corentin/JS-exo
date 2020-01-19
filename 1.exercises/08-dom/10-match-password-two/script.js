@@ -10,5 +10,23 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener("click", ()=> {
+
+        let mdpa = Array.from(document.querySelectorAll("input"))[0].value
+        let mdpb = Array.from(document.querySelectorAll("input"))[1].value
+    
+        console.log(Array.from(document.querySelectorAll("input"))[0].value + "\n" + Array.from(document.querySelectorAll("input"))[1].value)
+
+        if(mdpa === mdpb) {
+
+            alert("C'bon t'peux rentrer")
+        }
+        else {
+
+            document.getElementById("pass-one").setAttribute("class", "error")
+            document.getElementById("pass-two").setAttribute("class", "error")
+        }
+
+    })
 })();

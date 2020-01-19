@@ -10,5 +10,15 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    thingsToChange = document.querySelectorAll(".target")
+
+    for(let i = 0; i < thingsToChange.length; i++)
+    {
+        thingsToChange[i].innerHTML = thingsToChange = document.querySelectorAll(".target")
+
+        for(let i = 0; i < thingsToChange.length; i++)
+        {
+            thingsToChange[i].innerHTML = "Pwned n00b"
+        }
+    }
 })();

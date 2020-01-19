@@ -10,5 +10,10 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    Array.from(document.getElementsByTagName("input"))[0].setAttribute("maxlength", 9)
+
+    window.addEventListener("keydown", () => {
+
+     document.getElementById("counter").innerHTML = ((document.getElementsByTagName("input")[0].value.length + 1) + "/10")
+    })
 })();

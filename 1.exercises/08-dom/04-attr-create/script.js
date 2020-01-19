@@ -10,5 +10,20 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let a = document.querySelector("#source")
+    let b = document.createElement('img')
+  
+  console.log(a.getAttribute("data-image"))
+  
+  document.getElementById("target").appendChild(b);
+  
+  document.querySelector('img').setAttribute("src", a.getAttribute("data-image"));
+  
+  let c = document.getElementsByTagName("section")
+  
+  let d = Array.from(c);
+  
+  console.log(d[1])
+  
+  d[1].removeChild(d[1].firstElementChild);
 })();

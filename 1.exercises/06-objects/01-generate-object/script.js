@@ -10,5 +10,13 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click",() => {
+
+
+    let craycray = { lastname : "Colart", firstname : "Corentin", age : "24", city : "R'lyeh", country : "Lost in space"}
+
+    console.log(craycray)
+    alert(craycray.lastname + "\n" + craycray.firstname + "\n" + craycray.age + "\n" + craycray.city + "\n" + craycray.country)
+    
+    })
 })();

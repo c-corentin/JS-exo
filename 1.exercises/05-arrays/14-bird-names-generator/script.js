@@ -38,5 +38,28 @@
         "arboré",
     ]);
 
-    // your code here
+    
+    function randind(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min)
+      }
+
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        let randbird = Math.round(Math.random() * (birds.length -1))
+        let getadj = Array.from(adjectives) // à placer avant le randadj
+        let randadj = Math.round(Math.random() * getadj.length -1)
+
+        console.log(randbird + "\n" + randadj)
+
+        if(birds[randbird].fem == true)
+        {
+            document.getElementById("target").innerHTML = "La " + birds[randbird].name + " " + getadj[randadj] + "e"
+        }
+        else
+        {
+            document.getElementById("target").innerHTML = "Le " + birds[randbird].name + " " + getadj[randadj]
+        }
+    
+    })
 })();

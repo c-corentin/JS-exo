@@ -12,8 +12,35 @@
 (() => {
     class Animal {
         sayHello() {
-            return `${this.constructor.greeting}! I'm ${this.name}!`;
+            return `${this.greeting}! I'm ${this.name}!`
         }
     }
-    // your code here
-})();
+
+    class Dog extends Animal {
+        constructor(name, greeting) {
+        super()
+        this.name = name
+        this.greeting = greeting
+        } 
+	}
+
+    class Cat extends Animal {
+        constructor(name, greeting) {
+        super()
+        this.name = name
+        this.greeting = greeting
+        } 
+    }
+
+document.getElementById("run").addEventListener("click" , () => {
+    
+    let doga = new Dog("Lorem", "Woof woof")
+    let cata = new Cat("Ipsum", "Meow")
+
+    console.log(doga.sayHello())
+    console.log(cata.sayHello())
+
+
+})
+
+})()

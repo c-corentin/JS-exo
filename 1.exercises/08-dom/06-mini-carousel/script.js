@@ -16,7 +16,20 @@
         "../../_shared/img/compass.svg",
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
-    ];
+    ]
 
-    // your code here
-})();
+    let i =1
+
+document.getElementById("next").addEventListener("click", () => {
+
+    document.querySelector('img').setAttribute("src", gallery[i])
+    
+    if(i < 4) {
+        i ++ 
+    }
+    else {
+        i =0
+    }
+    console.log(document.querySelector('img').getAttribute("src"))
+})
+})()
