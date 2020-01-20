@@ -10,6 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
+
+    Array.from(document.getElementsByTagName("input"))[0].setAttribute("maxlength", 15)
+
     document.getElementById("pass-one").addEventListener("input", () => {
 
     let mdp = document.getElementById("pass-one").value

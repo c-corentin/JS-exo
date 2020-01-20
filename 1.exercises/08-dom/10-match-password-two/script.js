@@ -16,7 +16,7 @@
         let mdpa = Array.from(document.querySelectorAll("input"))[0].value
         let mdpb = Array.from(document.querySelectorAll("input"))[1].value
     
-        console.log(Array.from(document.querySelectorAll("input"))[0].value + "\n" + Array.from(document.querySelectorAll("input"))[1].value)
+        console.log(mdpa + "\n" + mdpb)
 
         if(mdpa === mdpb) {
 

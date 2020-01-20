@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+    document.getElementById("run").addEventListener("click",async ()=> {
+
+         a = await lib.getPosts()
+
+         a.forEach((article)=>{
+             lib.getComments(article.id,(arrComments)=> {
+
+                article.comments = arrComments
+             })
+             console.log(article)
+         })
+    })
+})()

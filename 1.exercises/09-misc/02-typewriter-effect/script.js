@@ -10,5 +10,26 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+
+            let bigString = document.getElementById("target").innerHTML
+            arrBigString = [...bigString]
+            let arrBigStringLength = arrBigString.length
+            for(let i = 0; i < arrBigStringLength; i++){
+                
+                arrBigString[i] = `<span style="visibility: hidden">${arrBigString[i]}</span>`
+            }
+            arrBigString = arrBigString.join('')
+            document.getElementById("target").innerHTML = arrBigString
+            alreadyDone = true
+        let textcounter = 1
+        let interval1 = setInterval(() => {
+            
+            document.querySelector(`p span:nth-child(${textcounter})`).style.visibility = "visible"
+            textcounter += 1
+            if(textcounter == arrBigStringLength){
+                
+                clearInterval(interval1)
+            }
+        }, 100)
+    
+})()

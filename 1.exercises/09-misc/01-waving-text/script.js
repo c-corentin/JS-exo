@@ -10,5 +10,24 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+            let bigString = document.getElementById("target").innerHTML
+
+            bigString = [...bigString]
+            console.log(bigString)
+            bigStringLength = bigString.length
+            let waveCount = 0
+            let arrClassWaveSize = [ "small", "medium", "large", "x-large", "xx-large", "x-large", "large", "medium"]
+
+            for(let i = 0; i < bigStringLength; i++) {
+
+                if(bigString[i] != " ") {
+
+                    bigString[i] = `<span class="wave${waveCount}" style="font-size: ${arrClassWaveSize[waveCount]}">${bigString[i]}</span>`
+                    waveCount += 1
+                    waveCount > 7 ? waveCount = 0 : 0
+                }
+            }
+            bigString = bigString.join('')
+            document.getElementById("target").innerHTML = bigString
+            alreadydone = true
 })();

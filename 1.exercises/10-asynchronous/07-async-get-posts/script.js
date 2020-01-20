@@ -10,5 +10,13 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+    document.getElementById("run").addEventListener("click", async()=> {
+
+       let a = await lib.getPosts()
+
+       a.forEach((article)=> {
+
+        console.log(article);
+       })
+    })
+})()

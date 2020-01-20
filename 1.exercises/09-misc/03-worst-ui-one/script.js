@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let slider = document.getElementById("slider");
+    let target = document.getElementById("target");
+    const valueChanger = () => {
+        let value = slider.value;
+            target.innerHTML = `+${value}`;
+    };
+    slider.oninput = valueChanger;
 })();

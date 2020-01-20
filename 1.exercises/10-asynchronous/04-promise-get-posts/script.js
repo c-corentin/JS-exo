@@ -10,5 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+    document.getElementById("run").addEventListener("click", ()=> {
+
+  lib.getPosts().then(function resolution(article) {
+
+        console.log(article)
+      }
+  )
+})
+})()
