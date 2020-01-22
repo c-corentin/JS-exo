@@ -38,28 +38,26 @@
         "arboré",
     ]);
 
-    
-    function randind(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min)
-      }
-
 
     document.getElementById("run").addEventListener("click", () => {
 
-        let randbird = Math.round(Math.random() * (birds.length -1))
+        let randbird = Math.floor(Math.random(0,11) * birds.length)
         let getadj = Array.from(adjectives) // à placer avant le randadj
-        let randadj = Math.round(Math.random() * getadj.length -1)
+        let randadj = Math.floor(Math.random(0,10) * getadj.length)
 
         console.log(randbird + "\n" + randadj)
+        console.log(birds[randbird].name)
 
-        if(birds[randbird].fem == true)
-        {
-            document.getElementById("target").innerHTML = "La " + birds[randbird].name + " " + getadj[randadj] + "e"
-        }
-        else
-        {
-            document.getElementById("target").innerHTML = "Le " + birds[randbird].name + " " + getadj[randadj]
-        }
+        // if(birds[randbird].fem == true)
+        // {
+        //     document.getElementById("target").innerHTML = "La " + birds[randbird].name + " " + getadj[randadj] + "e"
+        // }
+        // else
+        // {
+        //     document.getElementById("target").innerHTML = "Le " + birds[randbird].name + " " + getadj[randadj]
+        // }
+
+        document.getElementById("target").innerHTML = (birds[randbird].fem?"la ":"le ") + birds[randbird].name + " " + getadj[randadj] + (birds[randbird].fem?"e":"")
     
     })
 })();
