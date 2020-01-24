@@ -1,4 +1,4 @@
-# Exercises
+ # Exercises
 
 - Type of challenge: *learning* +
 - Team challenge: *solo*

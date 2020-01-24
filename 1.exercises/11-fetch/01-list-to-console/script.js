@@ -12,15 +12,17 @@
 (() => {
     document.getElementById("run").addEventListener("click", async ()=> {
 
-            try {
+        try
+        {
+            let request = await fetch("http://localhost:3000/heroes")
+            let xmen = await request.json()
+            console.log(xmen)
 
-                let a = await lib.getPersons()
-                console.log(a)
-               
-            }
-            catch(error) {
+        }
+        catch(error)
+        {
+            console.error(error)
+        }
 
-                console.error(error)
-            }
     })
 })()
