@@ -10,9 +10,9 @@
 // You will have time to focus on it later.
 
 
-    var a = Math.floor(Math.random() * 100) + 1
+    let a = Math.floor(Math.random() * 100) + 1
 
-    for (var a=1; a <= 100; a++){
+    for (let a=1; a <= 100; a++){
         if( a % 3 && a % 5 ) {
             console.log(a);
         } 
