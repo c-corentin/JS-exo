@@ -1,0 +1,24 @@
+.highlight {
+    opacity: 0.5;
+}
+
+div {
+    height: 150px;
+    width: 150px;
+}
+
+#up {
+    background-color: #87086a;
+}
+
+#down {
+    background-color: #d8ea72;
+}
+
+#left {
+    background-color: #78bb62;
+}
+
+#right {
+    background-color: #ee47c3;
+}

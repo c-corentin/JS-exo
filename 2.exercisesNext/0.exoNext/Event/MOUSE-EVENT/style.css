@@ -1,0 +1,27 @@
+div {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+
+.pos {
+    width: fit-content;
+    height: fit-content;
+}
+
+#un{
+    background-color: #B1BCE9;
+}
+
+#deux {
+    background-color: #AEC086;
+}
+
+#trois {
+    background-color: #E623AA;
+}
+
+.hide {
+    display: none;
+    background-color: white;
+}
